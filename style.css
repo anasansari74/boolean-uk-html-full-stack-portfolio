@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: borderbox;
+  scroll-behavior: smooth;
+
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  justify-self: center;
+}
+
+/* Header section */
+
+header,
+article {
+  border-top: 5px solid black;
+}
+
+header {
+  background-color: rgb(41, 110, 175);
+  color: white;
+
+  padding: 20px;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+header nav ul li {
+  display: inline;
+  text-align: right;
+  color: rgb(41, 110, 175);
+  background-color: white;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(12, 63, 110);
+}
+
+header a {
+  color: rgb(41, 110, 175);
+  text-decoration: none;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template:
+    ". h1 ." auto
+    ". p ." auto/
+    1fr 65ch 1fr;
+
+  padding: 20px;
+}
+
+h1 {
+  display: grid;
+  grid-area: h1;
+  font-size: 6rem;
+}
+
+header main p {
+  grid-area: p;
+  margin-bottom: 100px;
+}
+
+main strong {
+  color: black;
+}
+
+u {
+  text-decoration-color: black;
+}
+
+/* About me section */
+
+.about-me {
+  display: grid;
+  grid-template:
+    ". h2 ." auto
+    ". section ." auto/
+    1fr 65ch 1fr;
+
+  grid-gap: 10px;
+
+  padding: 20px 20px 40px 20px;
+}
+
+#about-me {
+  grid-area: h2;
+}
+
+.about-me section {
+  grid-area: section;
+}
+
+.about-me ul {
+  columns: 2;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  display: grid;
+  grid-template:
+    ". . h2 . ." auto
+    ". first second third ." auto/
+    1fr 35ch 35ch 35ch 1fr;
+
+  grid-gap: 15px;
+
+  padding: 20px;
+
+  background-color: rgb(252, 216, 222);
+}
+
+.portfolio h2 {
+  grid-area: h2;
+}
+
+.portfolio section {
+  padding: 10px;
+
+  border: 5px solid rgb(218, 34, 65);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(218, 34, 65);
+}
+
+.read-more {
+  text-decoration: none;
+
+  color: white;
+  background-color: rgb(218, 34, 65);
+
+  padding: 5px;
+
+  border-radius: 5px;
+}
+
+.repo {
+  text-decoration: none;
+  color: rgb(218, 34, 65);
+}
+
+.portfolio a {
+  justify-content: center;
+}
+
+.portfolio .first {
+  grid-area: first;
+}
+
+.portfolio .second {
+  grid-area: second;
+}
+
+.portfolio .third {
+  grid-area: third;
+}
+
+/* Experiance Section */
+
+.experiance {
+  display: grid;
+  grid-template:
+    ". h2 ." auto
+    ". section ." auto/
+    1fr 65ch 1fr;
+
+  grid-gap: 10px;
+
+  padding: 20px 20px 40px 20px;
+}
+
+.experiance h2 {
+  grid-area: h2;
+}
+
+.experiance section {
+  grid-area: section;
+}
+
+/* Footer section */
+
+footer {
+  color: white;
+  background-color: rgb(5, 5, 49);
+
+  padding-left: 10px;
+}
